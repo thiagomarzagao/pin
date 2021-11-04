@@ -14,7 +14,7 @@ data = []
 for i, row in df.iterrows():
     ticker = row['ticker']
     pin = row['PIN']
-    url = 'https://raw.githubusercontent.com/thiagomarzagao/pin/main/vpins/{}.csv'.format(ticker)
+    url = 'https://raw.githubusercontent.com/thiagomarzagao/pin/main/vpin/vpins/{}.csv'.format(ticker)
     try:
         df_ticker = pd.read_csv(url)
     except:
